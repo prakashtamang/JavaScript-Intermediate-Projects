@@ -1,0 +1,155 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: beige;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* height: 100vh; */
+}
+
+.container {
+  margin-top: 40px;
+  width: 700px;
+  text-align: center;
+  padding: 40px;
+  border-radius: 8px;
+  background-color: #fff;
+}
+
+h2 {
+  margin-bottom: 15px;
+}
+
+.toast-btn {
+  padding: 8px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.toast-btn:hover {
+  filter: brightness(0.9);
+}
+
+.success-btn {
+  color: #fff;
+  background-color: #198754;
+}
+
+.error-btn {
+  color: #fff;
+  background-color: #dc3545;
+}
+
+.info-btn {
+  color: #000;
+  background-color: #0dcaf0;
+}
+
+.warning-btn {
+  color: #000;
+  background-color: #ffc107;
+}
+
+.toast {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #fff;
+  padding: 5px;
+  border-radius: 4px;
+  box-shadow: -1px 1px 10px rgba(0, 0, 0, 0.3);
+  z-index: 999;
+  cursor: pointer;
+  animation:
+    slideInRight 0.3s ease-in-out forwards,
+    fadeOut 0.5s ease-in-out forwards 5s;
+  transform: translateX(110%);
+}
+
+.toast.toast-success {
+  background-color: #55cb94;
+}
+
+.toast.toast-success .toast-progress {
+  background-color: #198754;
+}
+
+.toast.toast-error {
+  background-color: #e08e96;
+}
+
+.toast.toast-error .toast-progress {
+  background-color: #dc3545;
+}
+
+.toast.toast-info {
+  background-color: #8dd1de;
+}
+
+.toast.toast-info .toast-progress {
+  background-color: #0dcaf0;
+}
+
+.toast.toast-warning {
+  background-color: #f0d278;
+}
+
+.toast.toast-warning .toast-progress {
+  background-color: #ffc107;
+}
+
+.toast-content-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.toast-icon {
+  margin-right: 5px;
+}
+
+.toast-progress {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: block;
+  background: #b7b7b7;
+  height: 4px;
+  width: 100%;
+  animation: toastProgress 3s ease-in-out forwards;
+}
+
+@keyframes slideInRight {
+  0% {
+    transform: translateX(110%);
+  }
+  75% {
+    transform: translateX(-10%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes toastProgress {
+  0% {
+    width: 100%;
+  }
+  100% {
+    width: 0%;
+  }
+}
