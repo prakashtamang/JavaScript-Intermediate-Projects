@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Form</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form class="payment-form" name="payment-form" method="post">
+        <div class="card-image">
+          <img
+            src="https://placehold.co/600x400?text=Visa Card"
+            alt="Visa Card"
+          />
+        </div>
+        <div class="form-group">
+          <label for="card-number">Card Number</label>
+          <input type="text" id="card-number" name="card-number" />
+        </div>
+        <div class="form-group">
+          <label for="card-holder">Card Holders</label>
+          <input type="text" id="card-holder" name="card-holder" />
+        </div>
+        <div class="form-group">
+          <div class="card-detail">
+            <div class="expiry-month">
+              <!-- Month -->
+              <label for="expiry-month">Expiration Date</label>
+              <select id="expiry-month" name="expiry-month">
+                <option value="">Month</option>
+                <option value="January">January</option>
+                <option value="February">February</option>
+                <option value="March">March</option>
+                <option value="April">April</option>
+                <option value="May">May</option>
+                <option value="June">June</option>
+                <option value="July">July</option>
+                <option value="August">August</option>
+                <option value="September">September</option>
+                <option value="October">October</option>
+                <option value="November">November</option>
+                <option value="December">December</option>
+              </select>
+            </div>
+            <div class="expiry-year">
+              <!-- Year -->
+              <label for="">&nbsp;</label>
+              <select id="expiry-year" name="expiry-year">
+                <option value="">Year</option>
+                <option value="2026">2026</option>
+                <option value="2027">2027</option>
+                <option value="2028">2028</option>
+                <option value="2029">2029</option>
+                <option value="2030">2030</option>
+                <option value="2031">2031</option>
+              </select>
+            </div>
+            <div class="card-cvv">
+              <!-- CVV -->
+              <label for="card-cvv">CVV</label>
+              <input type="text" id="card-cvv" name="card-cvv" />
+            </div>
+          </div>
+        </div>
+        <button type="submit" id="submit">Submit</button>
+      </form>
+
+      <div class="error-message"></div>
+      <div class="table-container">
+        <table>
+          <thead>
+            <tr>
+              <th>S.No</th>
+              <th>Card Number</th>
+              <th>Card Holder</th>
+              <th>Expiration Date</th>
+              <th>CVV</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
