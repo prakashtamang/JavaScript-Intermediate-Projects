@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ecommerce Website - Shopping Cart</title>
+
+    <!-- Remix Icon -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <a href="#" class="logo">Ecommerce</a>
+      <div id="cart-icon">
+        <i class="ri-shopping-bag-line"></i>
+        <span class="cart-item-count"></span>
+      </div>
+    </header>
+
+    <div class="cart">
+      <h2 class="cart-title">Your Cart</h2>
+      <div class="cart-content"></div>
+      <div class="total">
+        <div class="total-title">Total</div>
+        <div class="total-price">$0</div>
+      </div>
+      <button class="btn-buy">Buy Now</button>
+      <i class="ri-close-line" id="cart-close"></i>
+    </div>
+
+    <section class="shop">
+      <h1 class="section-title">Shop Products</h1>
+      <div class="product-content">
+        <div class="product-box" data-id="1">
+          <div class="img-box">
+            <img src="images/product1.jpg" alt="Product 1" />
+          </div>
+          <h2 class="product-title">Casual Black Polo</h2>
+          <div class="price-and-cart">
+            <span class="price">$100</span>
+            <i class="ri-shopping-bag-line add-cart"></i>
+          </div>
+        </div>
+
+        <div class="product-box" data-id="2">
+          <div class="img-box">
+            <img src="images/product2.jpg" alt="Product 2" />
+          </div>
+          <h2 class="product-title">Waterproof Hoodie</h2>
+          <div class="price-and-cart">
+            <span class="price">$50</span>
+            <i class="ri-shopping-bag-line add-cart"></i>
+          </div>
+        </div>
+
+        <div class="product-box" data-id="3">
+          <div class="img-box">
+            <img src="images/product3.jpg" alt="Product 3" />
+          </div>
+          <h2 class="product-title">Blue Swearshirt</h2>
+          <div class="price-and-cart">
+            <span class="price">$20</span>
+            <i class="ri-shopping-bag-line add-cart"></i>
+          </div>
+        </div>
+
+        <div class="product-box" data-id="4">
+          <div class="img-box">
+            <img src="images/product4.jpg" alt="Product 4" />
+          </div>
+          <h2 class="product-title">Hooded Urban Jacket</h2>
+          <div class="price-and-cart">
+            <span class="price">$125</span>
+            <i class="ri-shopping-bag-line add-cart"></i>
+          </div>
+        </div>
+
+        <div class="product-box" data-id="5">
+          <div class="img-box">
+            <img src="images/product5.jpg" alt="Product 5" />
+          </div>
+          <h2 class="product-title">Cold Weather Jacket</h2>
+          <div class="price-and-cart">
+            <span class="price">$147</span>
+            <i class="ri-shopping-bag-line add-cart"></i>
+          </div>
+        </div>
+
+        <div class="product-box" data-id="6">
+          <div class="img-box">
+            <img src="images/product6.jpg" alt="Product 6" />
+          </div>
+          <h2 class="product-title">Sporty Jacket</h2>
+          <div class="price-and-cart">
+            <span class="price">$80</span>
+            <i class="ri-shopping-bag-line add-cart"></i>
+          </div>
+        </div>
+
+        <div class="product-box" data-id="7">
+          <div class="img-box">
+            <img src="images/product7.jpg" alt="Product 7" />
+          </div>
+          <h2 class="product-title">Olive Heritage Hoodie</h2>
+          <div class="price-and-cart">
+            <span class="price">$62</span>
+            <i class="ri-shopping-bag-line add-cart"></i>
+          </div>
+        </div>
+
+        <div class="product-box" data-id="8">
+          <div class="img-box">
+            <img src="images/product8.jpg" alt="Product 8" />
+          </div>
+          <h2 class="product-title">Bright Horizon Polo</h2>
+          <div class="price-and-cart">
+            <span class="price">$70</span>
+            <i class="ri-shopping-bag-line add-cart"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
