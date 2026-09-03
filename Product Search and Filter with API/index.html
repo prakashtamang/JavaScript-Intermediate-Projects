@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Search & Filter</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Product Store</h1>
+
+    <div class="filters">
+      <input type="text" id="search-input" placeholder="Search products..." />
+
+      <select id="category-filter">
+        <option value="all">All Categories</option>
+      </select>
+
+      <select id="price-sort">
+        <option value="default">Sort by Price</option>
+        <option value="low-high">Price: Low to High</option>
+        <option value="high-low">Price: High to Low</option>
+      </select>
+
+      <button id="reset-btn">Reset</button>
+    </div>
+
+    <p id="loading">Loading products...</p>
+
+    <div class="products-container" id="products-container"></div>
+
+    <div class="pagination" id="pagination"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
